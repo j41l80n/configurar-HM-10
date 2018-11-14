@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 
-SoftwareSerial BTSerial(4, 5);
+SoftwareSerial BTSerial(4, 5); //tx, rx
 
 void setup() {
   Serial.begin(9600);
@@ -11,6 +11,7 @@ void setup() {
   // BTSerial.write("AT+ROLE1\r\n");
   // BTSerial.write("AT+TYPE1"); //Simple pairing
 }
+
 void loop()
 {
   if (BTSerial.available())
